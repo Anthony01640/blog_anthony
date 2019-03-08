@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'appli/css/main.css' %}" rel="stylesheet">
+    <title>
+    {% block title %}  Blog  {% endblock %}
+    </title>
+</head>
+<body>
+    <nav class="nav-toto">
+        <div>
+            <a href="{% url 'home' %}" class="home-toto">Anthony Dubuis</a>
+            <div class="mg-nav">
+                <a href="{% url 'home' %}" class="url">Accueil</a>
+                 <a href="{% url 'curriculum_vitae' %}" class="url">A propos</a>
+                <a href="{% url 'blog' %}" class="url">Blog</a>
+                <a href="{% url 'contact' %}" class="url">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    {% block body %}
+
+
+
+
+    {% endblock %}
+</body>
+</html>

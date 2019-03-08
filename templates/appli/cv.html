@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+    <h1 class="title-cv">A propos</h1>
+    <p>Je suis Anthony DUBUIS, étudiant en deuxième année de Bachelor d'informatique à Ynov Lyon.</p>
+    <div class="flex-line">
+        <button class="btn-app">
+            <a href="{% static 'appli/img/Curriculum_Vitae.pdf' %}" target="_blank" class="text-none">Mon CV</a>
+        </button>
+
+        <button class="btn-app"><a href="https://www.linkedin.com/in/anthony-dubuis-860531150/" target="_blank" class="text-none">Linkedin</a></button>
+    </div>
+    <h2 class="title-info">Information </h2>
+    <p class="info">Age : 19 ans<br>
+    Né à Bordeaux<br>
+    Langues : Français et Anglais<br>
+    </p>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    {% for article in articles %}
+        <div class="inline-name">
+                <a href="{% url 'article_description' article.name %}" class="blog">
+                    {{ article.name }}
+                </a>
+            
+        </div>
+    {% endfor %}
+
+
+
+{% endblock %}

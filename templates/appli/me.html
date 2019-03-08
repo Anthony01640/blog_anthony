@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <h1 class="title-contact">Contactez moi</h1>
+
+    <div class="flex-column-contact">
+            <div class="contact-form">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="form-actions">
+                      <button type="submit" class="btn-contact">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact">
+                <h1>Adresse : </h1>
+                    <h3>16 Grande rue, 01500 Ambronay</h3>
+                <h1>Téléphone :</h1>
+                    <h3>06 95 63 30 67</h3>
+                <h1>Email :</h1>
+                    <h3>Anthony.dubuis@outlook.fr</h3>
+            </div>
+    </div>
+{% endblock %}

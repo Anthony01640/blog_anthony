@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    <div class="flex-line">
+        <div class="flex-column">
+            <h1>Bienvenue sur mon blog </h1>
+            <h2> Je m'appelle Anthony DUBUIS</h2>
+        </div>
+
+        <div>
+        <img src="{% static 'appli/img/img_un.jpg' %}" class="img-un">
+
+        </div>
+    </div>
+
+    <div class="home-txt">
+        <p>Développeur back-end Python</p>
+    </div>
+{% endblock %}
